@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+    <head>
+
+        <title>Ubermelon Order Form</title>
+
+    </head>
+
+    <body>
+
+        <h1>Order!</h1>
+
+        <h3>Prices</h3>
+
+            <table>
+                <tr><td>Melon Name  Price per lb
+                <tr><td>Watermelon  $1.59
+                <tr><td>Honeydew    $0.99
+                <tr><td>Canteloupe  $1.29
+                <tr><td>Crenshaw    $2.19
+                <tr><td>Canary      $11.99 
+            </table>
+        <p>
+            Place your orders here! You know you want to.</p>
+
+        <form action="https://ubermelon-order-form.herokuapp.com/process" method="GET">
+            First Name: <input type="text" name="firstname">
+            Last Name: <input type="text" name="lastname">
+            Melon Type:
+                <select name="melontype">
+                    <option value="watermelon">Watermelon</option>
+                    <option value="honeydew">Honeydew</option>
+                    <option value="canteloupe" >Canteloupe </option>
+                    <option value="crenshaw" >Crenshaw</option>
+                    <option value="canary">Canary</option>
+                </select>
+            Quantity: <input type="text" name="quantity">
+            Delivery Time:
+                     <input type="radio" name="ampmwat" value="am">AM
+                     <input type="radio" name="ampmwat" value="pm">PM
+                     <input type="radio" name="ampmwat" value="wat">WAT
+            Returning Customer:
+                     <input type="radio" name="returning" value="yes">Yes
+                     <input type="radio" name="returning" value="no">No
+
+            Statistics:
+                     <input type="checkbox" name="stats" value="dog">Dog
+                     <input type="checkbox" name="stats" value="cat">Cat
+                     <input type="checkbox" name="stats" value="hedgehog">Hedgehog
+                     <input type="checkbox" name="stats" value="balloonicorn">Ballonicorn
+                     <input type="checkbox" name="stats" value="yak">Yak
+            Submit:
+                     <input type="submit">
+       </form>
+
+       <footer>*Quantities given are by the flat.
+
+       </footer>
+
+
+    </body>
+
+</html>
+
